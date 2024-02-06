@@ -1,3 +1,5 @@
+use std::net::UdpSocket;
+
 fn main() {
-    println!("Hello, world!");
+    let socket = UdpSocket::bind("127.0.0.1:34254").expect("couldn't bind to address");
 }
